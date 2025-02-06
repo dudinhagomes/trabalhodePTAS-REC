@@ -1,0 +1,96 @@
+:root {
+  --rosa: #f8e1e7;
+  --dourado: #c9a38d;
+  --branco: #ffffff;
+  --cinza: #ececec;
+  --sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset e Configurações Globais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--rosa);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background: var(--dourado);
+  color: var(--branco);
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Lista de Produtos */
+#lista-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Cartão de Produto */
+.produto {
+  background: var(--branco);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  width: 220px;
+  box-shadow: 0 4px 8px var(--sombra);
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.produto h3 {
+  color: var(--dourado);
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.produto .marca {
+  font-size: 14px;
+  color: var(--cinza);
+}
+
+.produto .preco {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Botão Comprar */
+.comprar {
+  background: var(--dourado);
+  color: var(--branco);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.comprar:hover {
+  background: #a37b60;
+}
+
+/* Rodapé */
+footer {
+  background: var(--dourado);
+  color: var(--branco);
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 20px;
+}
