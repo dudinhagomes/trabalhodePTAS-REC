@@ -5,8 +5,8 @@ module.exports = {
     try {
       const produto = await Produto.create(req.body);
       res.status(201).json(produto);
-    } catch (err) {
-      res.status(400).json({ erro: 'Erro ao criar produto', detalhe: err.message });
+    } catch (erro) {
+      res.status(400).json({ erro: 'Erro ao criar produto', detalhe: erro.message });
     }
   },
 
@@ -26,7 +26,7 @@ module.exports = {
       const produto = await Produto.findByIdAndUpdate(req.params.id, req.body, { new: true });
       if (!produto) return res.status(404).json({ erro: 'Produto não encontrado' });
       res.json(produto);
-    } catch (err) {
+    } catch (erro) {
       res.status(400).json({ erro: 'Erro ao atualizar produto' });
     }
   },
