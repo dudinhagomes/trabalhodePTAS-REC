@@ -6,7 +6,7 @@
   --sombra: rgba(0, 0, 0, 0.1);
 }
 
-/* Reset e Configurações Globais */
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: var(--rosa);
@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-/* Cabeçalho */
+
 header {
   background: var(--dourado);
   color: var(--branco);
@@ -24,7 +24,7 @@ header {
   font-weight: bold;
 }
 
-/* Lista de Produtos */
+
 #lista-produtos {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@ header {
   padding: 20px;
 }
 
-/* Cartão de Produto */
+
 .produto {
   background: var(--branco);
   border-radius: 10px;
@@ -69,7 +69,7 @@ header {
   color: #333;
 }
 
-/* Botão Comprar */
+
 .comprar {
   background: var(--dourado);
   color: var(--branco);
@@ -86,7 +86,7 @@ header {
   background: #a37b60;
 }
 
-/* Rodapé */
+
 footer {
   background: var(--dourado);
   color: var(--branco);
